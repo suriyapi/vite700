@@ -9,6 +9,7 @@ import Picture from '../../components/Picture';
 import TitleLink from '../../components/TitleLink';
 import Material from '../../components/Material';
 import Description from '../../components/Description';
+import Tech from '../../components/Tech';
 const Experience = () => {
     const [isMouseEnter, setIsMouseEnter] = useState({});
     return (
@@ -34,10 +35,8 @@ const Experience = () => {
 
                 <Description description="Designing and developing a sports data analysis system that scrapes data from various sports websites."/>
                 
-                <div className="flex gap-4 text-sm">
-                    <div className={`bg-primarySubcontent px-2 py-1 rounded-md ${isMouseEnter ['ex1'] ? "text-primaryTitle" : ""} `}>React</div>
-                    <div className={`bg-primarySubcontent px-2 py-1 rounded-md ${isMouseEnter ['ex1'] ? "text-primaryTitle" : ""} `}>Node.js</div>
-                    <div className={`bg-primarySubcontent px-2 py-1 rounded-md ${isMouseEnter ['ex1'] ? "text-primaryTitle" : ""} `}>Express</div>
+                <div >
+                    <Tech isHighLight = {isMouseEnter ['ex1']} data={['React', 'Node.js', 'Express']}/>
                 </div>
             </div>
         </div>

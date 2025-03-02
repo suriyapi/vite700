@@ -8,6 +8,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Picture from '../../components/Picture';
 import TitleLink from '../../components/TitleLink';
 import Material from '../../components/Material';
+import Description from '../../components/Description';
 const Experience = () => {
     const [isMouseEnter, setIsMouseEnter] = useState({});
     return (
@@ -31,7 +32,8 @@ const Experience = () => {
                     <Material icon={faYoutube} link="https://www.google.com/" />
                 </div>
 
-                <div className='text-sm'>Designing and developing a sports data analysis system that scrapes data from various sports websites.</div>
+                <Description description="Designing and developing a sports data analysis system that scrapes data from various sports websites."/>
+                
                 <div className="flex gap-4 text-sm">
                     <div className={`bg-primarySubcontent px-2 py-1 rounded-md ${isMouseEnter ['ex1'] ? "text-primaryTitle" : ""} `}>React</div>
                     <div className={`bg-primarySubcontent px-2 py-1 rounded-md ${isMouseEnter ['ex1'] ? "text-primaryTitle" : ""} `}>Node.js</div>

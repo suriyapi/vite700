@@ -6,6 +6,7 @@ import { useState } from 'react';
 import FormattedDate from '../../components/FormattedDate';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Picture from '../../components/Picture';
+import TitleLink from '../../components/TitleLink';
 const Experience = () => {
     const [isMouseEnter, setIsMouseEnter] = useState({});
     return (
@@ -21,10 +22,7 @@ const Experience = () => {
                 <Picture picture={picExp} title='Fashion Ecommerce'/>
             </div>
             <div className="grid gap-y-4">
-                <div className={`text-primaryAccent ${isMouseEnter ['ex1'] ?"text-primaryTitle":""}`}>
-                    Fashion Ecommerce
-                    <FontAwesomeIcon className={`text-xs -rotate-45 duration-500 ease-out ${isMouseEnter ['ex1'] ? "translate-x-1 -translate-y-1":""}`} icon={faArrowRight}/>
-                </div>
+                <TitleLink isHighLight = {isMouseEnter ['ex1']} title='Fashion Ecommerce' link="https://www.google.com/"/>
                 <div className='flex gap-4 text-xl'>
                     <a href='https://www.google.com/' target="_blank" className='hover:scale-110'><FontAwesomeIcon icon={faGithub}/></a>
                     <a href='https://www.google.com/' target="_blank" className='hover:scale-110'><FontAwesomeIcon icon={faMedium}/></a>

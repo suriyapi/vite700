@@ -36,4 +36,19 @@ export const data = [
         ],
         picture: picExp,
     },
+    {
+        date: "2024-2025",
+        title: "Full · Sport Analysis System",
+        link: "https://suriyapi.github.io/vite/",
+        materials: [
+            { type: faGithub, link: "https://suriyapi.github.io/vite/" },
+        ],
+        descriptions: [
+            "Create tools for monitoring the backend and implementing self-recovery mechanisms, ensuring their seamless operation 24/7.",
+        ],
+        skills: [
+            ["React"],
+        ],
+        picture: picExp,
+    },
 ]

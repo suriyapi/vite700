@@ -16,13 +16,13 @@ const Experience = () => {
         <div className="text-primaryAccent font-medium">Experience</div>
         {
             data.map(({
-                date,
-                title,
-                link,
-                materials,
-                descriptions,
-                skills,
-                picture,
+                date = "",
+                title = "",
+                link = "",
+                materials =[],
+                descriptions= [],
+                skills= [],
+                picture= "",
             }, index) => (
                     <div 
                         key={`${SECTION_ID}-${index}-${title.replaceAll(" ", "")}`}

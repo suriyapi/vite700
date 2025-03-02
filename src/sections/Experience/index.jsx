@@ -7,6 +7,7 @@ import FormattedDate from '../../components/FormattedDate';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Picture from '../../components/Picture';
 import TitleLink from '../../components/TitleLink';
+import Material from '../../components/Material';
 const Experience = () => {
     const [isMouseEnter, setIsMouseEnter] = useState({});
     return (
@@ -23,11 +24,13 @@ const Experience = () => {
             </div>
             <div className="grid gap-y-4">
                 <TitleLink isHighLight = {isMouseEnter ['ex1']} title='Fashion Ecommerce' link="https://www.google.com/"/>
+                
                 <div className='flex gap-4 text-xl'>
-                    <a href='https://www.google.com/' target="_blank" className='hover:scale-110'><FontAwesomeIcon icon={faGithub}/></a>
-                    <a href='https://www.google.com/' target="_blank" className='hover:scale-110'><FontAwesomeIcon icon={faMedium}/></a>
-                    <a href='https://www.google.com/' target="_blank" className='hover:scale-110'><FontAwesomeIcon icon={faYoutube}/></a>
+                    <Material icon={faGithub} link="https://www.google.com/" />
+                    <Material icon={faMedium} link="https://www.google.com/" />
+                    <Material icon={faYoutube} link="https://www.google.com/" />
                 </div>
+
                 <div className='text-sm'>Designing and developing a sports data analysis system that scrapes data from various sports websites.</div>
                 <div className="flex gap-4 text-sm">
                     <div className={`bg-primarySubcontent px-2 py-1 rounded-md ${isMouseEnter ['ex1'] ? "text-primaryTitle" : ""} `}>React</div>
